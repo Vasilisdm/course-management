@@ -14,4 +14,12 @@ module.exports = {
         publicPath: "/",
         filename: "bundle.js",
     },
+    devServer: {
+        stats: "minamal",
+        overlay: true,
+        historyApiFallback: true,
+        disableHostCheck: true,
+        headers: { "Access-Control-Allow-Origin": "*" },
+        https: false,
+    },
 };
