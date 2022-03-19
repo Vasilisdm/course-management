@@ -1,0 +1,13 @@
+# Build folder
+Build
+
+# Runtime data
+pids
+*.pid
+*.seed
+
+# Grunt intermediate storage
+.grunt
+
+# Node modules
+node_modules
