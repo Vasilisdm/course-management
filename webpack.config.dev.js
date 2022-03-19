@@ -22,4 +22,9 @@ module.exports = {
         headers: { "Access-Control-Allow-Origin": "*" },
         https: false,
     },
+    plugins: [
+        new htmlWebpackPlugin({
+            template: "src/index.html",
+        }),
+    ],
 };
