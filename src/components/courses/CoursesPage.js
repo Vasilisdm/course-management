@@ -10,10 +10,10 @@ class CoursesPage extends React.Component {
         };
     }
 
-    handleChange(event) {
+    handleChange = (event) => {
         const course = { ...this.state.course, title: event.target.value };
         this.setState({ course: course });
-    }
+    };
 
     render() {
         return (
