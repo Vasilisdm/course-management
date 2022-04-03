@@ -6,6 +6,7 @@ import * as authorActions from "../../redux/actions/authorActions";
 import PropTypes from "prop-types";
 import { bindActionCreators } from "redux";
 import CourseList from "./CourseList";
+import Spinner from "../common/Spinner";
 class CoursesPage extends React.Component {
     constructor(props) {
         super(props);
@@ -36,7 +37,7 @@ class CoursesPage extends React.Component {
                     <Redirect to="/course" />
                 )}
                 <h2>Courses</h2>
-
+                <Spinner />
                 <button
                     style={{ marginBottom: 20 }}
                     className="btn btn-primary add-course"
